@@ -1,0 +1,590 @@
+:root {
+    --first-color: #2196F3;
+    --second-color: #212121;
+    --third-color: #757575;
+    --fourth-color: #ffffff;
+    --fifth-color: #2F303A;
+    --sixth-color: #F5F4FA;
+    --seventh-color: #000000;
+    --svg: #AFB1B8
+}
+/* Увлекательнейшее приключение объявляется открытым */
+html{
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after{
+    box-sizing: inherit;
+  }
+body {
+    color: var(--third-color);
+    background-color: #ffffff;
+    font-family: 'Roboto';
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+  /* тег для секций */
+  .secta{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+.container{
+    width: 1200px;
+    align-items: center;
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+  /*шапка сайта*/
+  
+  /*logo*/
+  .logo {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+    line-height: 31px;
+    font-size: 26px;
+  }
+  
+  span {
+    color: var(--first-color);
+    text-decoration: none;
+  }
+  
+  /*шапка навигації*/
+  .header-nav{
+    box-sizing: border-box;
+    margin-bottom: 0;
+    text-decoration: none;
+    }
+    
+  .header-nav,
+  .contacts-nav
+  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+.a{
+  display: flex;
+  align-items: center;
+}
+.contact-icon{
+  margin-right: 10px;
+  fill: currentColor;
+}
+  .nav-list{
+    display: flex;
+    margin-left: 93px;
+    text-decoration: none;
+  }
+
+  .nav-list .link-current{
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px; 
+
+    color: var(--first-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .nav-list .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #000000;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+
+  .nav-list .link:hover,
+  .nav-list .link:focus {
+    color: var(--first-color);
+    text-decoration: none;
+  }
+
+  .contacts-nav{
+    display: flex;
+    margin-left: auto;
+    text-decoration: none;
+  }
+
+  .contacts-nav li + li {
+    margin-left: 50px;
+    text-decoration: none;
+  }
+  
+  .contacts-nav a {
+    color: var(--third-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .contacts-nav a:focus,
+  .contacts-nav a:hover {
+    color: var(--first-color);
+    text-decoration: none;
+  }
+   .list-item{
+    margin-right: 54px;
+    text-decoration: none;
+  }
+  .list-item:last-child{
+    margin-right: 0;
+    text-decoration: none;
+  } 
+.navig{
+    padding-left: 0px;}
+.conta{
+    color: var(--third-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    margin-bottom: 9px;
+}
+.conta:hover{
+    color: var(--first-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+/* Надеюсь сверху вы не потерялись, переходим к секции герой и прочее */
+.hero {
+    background-color: var(--fifth-color);
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+     url("./img/fone.jpg");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin: 0px;
+}
+
+.big-title {
+    color: var(--fourth-color);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-style: normal;
+    font-family: 'Roboto';
+    margin-bottom: 30px;
+    letter-spacing: 0.06em;
+    font-size: 44px;
+    line-height: 60px;
+}
+
+.button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  margin-top: 0px;
+  color: var(--fourth-color);
+  background-color: var(--first-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.06em; 
+}
+/* Модальное окно */
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--fourth-color);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-button{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background-image: url("./svg/close.svg");
+  background-size: contain;
+}
+/* это три тега отвечающие за маленькие тексты */
+.mini-title {
+  color: #212121;
+    /* color: var(--second-color); */
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+.min-title{
+  color: #212121;
+    /* color: var(--second-color); */
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+.tex{
+    color: var(--third-color);
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+/* Заглавие в индексе */
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* далее идут все отделы футера */
+.foot {
+    background-color: var(--fifth-color);
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.fj{
+  display: flex;
+  align-items: baseline;
+}
+.join{
+  display: flex;
+}
+.logo2 {
+    color: var(--fourth-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+    line-height: 31px;
+    font-size: 26px;
+}
+
+.logo2-span {
+    color: var(--first-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+    line-height: 31px;
+    font-size: 26px;
+}
+
+.adress {
+    color: var(--fourth-color);
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto';
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+/* футер закончился, далее часть портфилио */
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+  .filter li:not(:last-child){
+    margin-right: 8px;
+  }
+  .filter-link{
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 73px;
+    height: 38px;
+    padding: 6px 22px;
+    justify-content: center;
+    align-items: center;
+    color: var(--second-color);
+    background-color: var(--sixth-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.16em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+.filter-link:hover,
+.filter-link:focus{
+background-color: var(--first-color);
+color: var(--sixth-color);
+}
+/* первая часть портфолио закончилась, далее наша команда */
+.team img{
+    margin-bottom: 30px;
+  }
+.img1{
+    margin-right: 30px;
+    width: 370px;
+}
+.img2{
+    justify-content: space-between;
+    width: 270px;
+}
+.list-team{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0px;
+}
+.team{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+.team:not(:last-child){
+    margin-right: 30px;
+}
+.icon{
+  background-color: #F5F4FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.item-icon-team{
+ fill: #AFB1B8; 
+
+} 
+.item-icon-team:not(:last-child){
+  margin-right: 10px;
+}
+.link-team{
+  fill: #AFB1B8;
+  border-radius: 50%;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-team:hover{
+  background-color: #2196F3;
+  fill: #ffffff;
+}
+/* Далее постоянныне клиенты */
+.custom{
+  padding-left: 0px;
+}
+.custom-l{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--svg);
+  border-radius: 4px;
+  margin-left: 30px;
+  color: var(--svg);
+}
+.custom-l:first-child{
+  margin-right: 0px;
+}
+.custom-l:hover{
+  border: 1px solid var(--first-color);
+  color: var(--first-color);
+}
+.custom-ic{
+fill: currentColor;
+}
+/* Присоеденяйтесь */
+.join-tit{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 70px;
+}
+.join-it:not(:last-child){
+  margin-right: 10px;
+}
+.join-li{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--fourth-color);
+  background-color: #FFFFFF1A;
+}
+.join-ic{
+  fill: currentColor;
+  margin: 12px;
+}
+.join-li:hover{
+color: var(--fourth-color);
+background-color: var(--first-color);
+}
+/* Имена людей из нашей команды */
+.name{
+    color: var(--second-color);
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto';
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* позиция из нашей команды */
+.pos{
+    color: var(--third-color);
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto';
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 19px;
+}
+/* примеры работ из портфолио */
+ .examples{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0px;
+  }
+
+  .examples-link{
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .examples-title {
+    color: var(--second-color);
+  
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  
+  .examples-type {
+    color: var(--third-color);
+  
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+  }
+  /* Карточки будут двигаться. Ураааааа */
+  .img-thumb{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlane{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--fourth-color);
+    padding: 63px 24px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.link-thumb{
+  text-decoration: none;
+}
+  .link-thumb:hover .overlane,
+  .link-thumb:focus .overlane{
+    transform: translateY(0);
+  }
+  .link-thumb:hover .link-text,
+  .link-thumb:focus .link-text{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  /* невидимая надпись */
+.non-vision {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
