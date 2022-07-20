@@ -49,6 +49,46 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button type="button" class="modal-button" data-modal-close></button>
+                    <!-- Формальная форма -->
+                    <form class="form js-speaker-form" >
+                        <h3>Залиште свої дані, ми Вам зателефонуємо</h3>
+                        <label for="user-name">Ім'я</label>
+                        <img src="./svg/form-name.svg" alt="mini human">
+                        <input
+                            class="form-field" 
+                            type="text" name="" 
+                            id="user-name" 
+                            autocomplete="on">
+                        <label for="user-tel">Телефон</label>
+                        <img src="./svg/form-tel.svg" alt="">
+                        <input
+                            class="form-field"
+                            type="tel" name=""
+                            id="user-tel" 
+                            autocomplete="on">
+                    
+                        <label for="user-mail">Пошта</label>
+                        <img src="./svg/form-mail.svg" alt="">
+                        <input 
+                            class="form-field"
+                            type="mail" 
+                            name="" 
+                            id="user-mail" 
+                            autocomplete="on">
+                        <label for="comments">Коментарі</label>
+                        <textarea 
+                            class="textarea" 
+                            name="comments" 
+                            id="comments"
+                            rows="10"
+                            placeholder="Введіть коментар">
+                        </textarea>
+                        <label class="field-label">
+                            <input type="checkbox" name="checkbox" value="checkbox">
+                            Погоджуюсь з розсилкою і приймаю 
+                           <a href="./" >Умови договору</a>
+                           <button type="submit" class="form-button">Надіслати</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -115,7 +155,8 @@
                         </li>
                         <li><img class="img1" src="./img/snova-komputer.jpg" width="200" alt="Красивый компьютер №2">
                         </li>
-                        <li><img class="img1" src="./img/colors.jpg" width="200" alt="Красивый компьютер №3"></li>
+                        <li><img class="img1" src="./img/colors.jpg" width="200" alt="Красивый компьютер №3">
+                        </li>
                     </ul>
                 </div>
 
