@@ -51,38 +51,60 @@
                     <button type="button" class="modal-button" data-modal-close></button>
                     <!-- Формальная форма -->
                     <form class="form js-speaker-form" >
-                        <h3>Залиште свої дані, ми Вам зателефонуємо</h3>
-                        <label for="user-name">Ім'я</label>
-                        <img src="./svg/form-name.svg" alt="mini human">
+                        <h3 class="form-text">Залиште свої дані, ми Вам зателефонуємо</h3>
+                        <ul class="form-list">
+                            <li class="field">
+                                <label for="user-name">Ім'я</label>
                         <input
                             class="form-field" 
                             type="text" name="" 
                             id="user-name" 
-                            autocomplete="on">
-                        <label for="user-tel">Телефон</label>
-                        <img src="./svg/form-tel.svg" alt="">
-                        <input
+                            autocomplete="on"
+                            placeholder="Kli Tarent">
+                            <svg width="18" height="18" class="form-icon">
+                                <use href="./svg/icons.svg#person"></use>
+                            </svg>
+                            
+                            </li>
+                            <li class="field"> 
+                                <label for="user-tel">Телефон</label>
+                            
+                            <input
                             class="form-field"
                             type="tel" name=""
                             id="user-tel" 
-                            autocomplete="on">
-                    
-                        <label for="user-mail">Пошта</label>
-                        <img src="./svg/form-mail.svg" alt="">
-                        <input 
-                            class="form-field"
-                            type="mail" 
-                            name="" 
-                            id="user-mail" 
-                            autocomplete="on">
-                        <label for="comments">Коментарі</label>
-                        <textarea 
-                            class="textarea" 
-                            name="comments" 
-                            id="comments"
-                            rows="10"
-                            placeholder="Введіть коментар">
-                        </textarea>
+                            autocomplete="on"
+                            placeholder="+380(xxx) xxx xx xx">
+                            <svg width="18" height="18" class="form-icon">
+                                <use href="./svg/icons.svg#phone"></use>
+                            </svg>
+                            </li>
+                            <li class="field">
+                                <label for="user-mail">Пошта</label>
+                                
+                                <input 
+                                class="form-field"
+                                type="mail" 
+                                name="" 
+                                id="user-mail" 
+                                autocomplete="on"
+                                placeholder="infodev@info.com"
+                                >
+                                <svg width="18" height="18" class="form-icon">
+                                    <use href="./svg/icons.svg#email"></use>
+                                </svg>
+                            </li>
+                            <li class="field">
+                             <label for="comments">Коментарі</label>
+                                <textarea 
+                                class="textarea" 
+                                name="comments" 
+                                id="comments"
+                                rows="10"
+                                placeholder="Введіть коментар">
+                            </textarea>
+                            </li>
+                        </ul>
                         <label class="field-label">
                             <input type="checkbox" name="checkbox" value="checkbox">
                             Погоджуюсь з розсилкою і приймаю 
@@ -93,8 +115,7 @@
             </div>
         </section>
         <!-- Наші послуги -->
-        <div class="container">
-            <section>
+            <section class="secta">
                 <div class="container">
                     <h2 class="non-vision">Особливості</h2>
                     <ul>
@@ -144,7 +165,6 @@
                         </li>
                     </ul>
                 </div>
-
             </section>
             <!-- Cекція чим ми займаємось -->
             <section class="secta">
@@ -162,7 +182,7 @@
 
             </section>
             <!-- Секція наша команда -->
-            <section>
+            <section class="team-secta secta">
                 <div class="container">
                     <h2 class="title">Наша команда</h2>
                     <ul class="list-team">
@@ -170,7 +190,7 @@
                             <img class="img2" src="./img/igor.jpg" width="300" alt="ИИИИИИГОРЬ">
                             <p class="name">Ігор Дем'яненко</p>
                             <p class="pos">Product Designer</p>
-                            <ul>
+                            <ul class="list-icon">
                                 <li class="item-icon-team"> <a class="link-team" href=""> <svg width="20" height="20">
                                             <use href="./svg/icons.svg#icon-instagram"></use>
                                         </svg> </a> </li>
@@ -189,7 +209,7 @@
                             <img class="img2" src="./img/olga.jpg" width="300" alt="ОленьКа">
                             <p class="name">Ольга Репіна</p>
                             <p class="pos">Frontend Developer</p>
-                            <ul>
+                            <ul class="list-icon">
                                 <li class="item-icon-team"> <a class="link-team" href=""> <svg width="20" height="20">
                                             <use href="./svg/icons.svg#icon-instagram"></use>
                                         </svg> </a> </li>
@@ -208,7 +228,7 @@
                             <img class="img2" src="./img/kolya.jpg" width="300" alt="Николай">
                             <p class="name">Микола Тарасов</p>
                             <p class="pos">Marketing</p>
-                            <ul>
+                            <ul class="list-icon">
                                 <li class="item-icon-team"> <a class="link-team" href=""> <svg width="20" height="20">
                                             <use href="./svg/icons.svg#icon-instagram"></use>
                                         </svg> </a> </li>
@@ -227,7 +247,7 @@
                             <img class="img2" src="./img/misha.jpg" width="300" alt="Мыша">
                             <p class="name">Михайло Єрмаков</p>
                             <p class="pos">Ul Designer</p>
-                            <ul>
+                            <ul class="list-icon">
                                 <li class="item-icon-team"> <a class="link-team" href=""> <svg width="20" height="20">
                                             <use href="./svg/icons.svg#icon-instagram"></use>
                                         </svg> </a> </li>
@@ -297,7 +317,6 @@
             </section>
         </div>
     </main>
-
     <footer class="foot">
         <div class="fj">
             <div class="footer">
@@ -306,24 +325,27 @@
                 <a href="mailto:artem.dobrovolsky04@gmail.com" class="conta">artem.dobrovolsky04@gmail.com</a>
                 <a href="tel:+380978761505" class="conta">+38 097 876 15 05</a>
             </div>
-            <h3 class="join-tit">Приеднуйтесь</h3>
-            <ul>
-                <li class="join-it"> <a class="join-li" href=""> <svg class="join-ic" width="20" height="20">
-                            <use href="./svg/icons.svg#icon-instagram"></use>
-                        </svg> </a> </li>
-                <li class="join-it"> <a class="join-li" href=""> <svg class="join-ic" width="20" height="16">
-                            <use href="./svg/icons.svg#icon-tweeter"></use>
-                        </svg> </a> </li>
-                <li class="join-it"> <a class="join-li" href=""> <svg class="join-ic" width="20" height="20">
-                            <use href="./svg/icons.svg#icon-facebook"></use>
-                        </svg> </a> </li>
-                <li class="join-it"> <a class="join-li" href=""> <svg class="join-ic" width="20" height="20">
-                            <use href="./svg/icons.svg#icon-linkedin"></use>
-                        </svg> </a> </li>
-            </ul>
+            <div class="join">
+                <h3 class="join-tit">Приеднуйтесь</h3>
+                <ul>
+                    <li class="join-it"> <a class="join-li" href=""> <svg class="join-ic" width="20" height="20">
+                                <use href="./svg/icons.svg#icon-instagram"></use>
+                            </svg> </a> </li>
+                    <li class="join-it"> <a class="join-li" href=""> <svg class="join-ic" width="20" height="16">
+                                <use href="./svg/icons.svg#icon-tweeter"></use>
+                            </svg> </a> </li>
+                    <li class="join-it"> <a class="join-li" href=""> <svg class="join-ic" width="20" height="20">
+                                <use href="./svg/icons.svg#icon-facebook"></use>
+                            </svg> </a> </li>
+                    <li class="join-it"> <a class="join-li" href=""> <svg class="join-ic" width="20" height="20">
+                                <use href="./svg/icons.svg#icon-linkedin"></use>
+                            </svg> </a> </li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
 </body>
 
 </html>
