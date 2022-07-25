@@ -468,6 +468,24 @@ color: var(--sixth-color);
     margin-right: 30px;
     width: 370px;
 }
+.img-back{
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  position: relative;
+  bottom: 74px;
+}
+.back-text{
+  margin-top: 27px;
+  color: var(--fourth-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-transform: uppercase; 
+  position: relative;
+  top: 27px;
+}
 .img2{
     justify-content: space-between;
     width: 270px;
